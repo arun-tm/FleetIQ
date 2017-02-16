@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_dashboard" android:icon="@mipmap/ic_directions_bus_white_24dp"
+            android:title="Home" />
+        <item android:id="@+id/nav_engine_performance" android:icon="@mipmap/ic_settings_input_component_white_24dp"
+            android:title="Engine Performance" />
+        <item android:id="@+id/nav_gallery" android:icon="@mipmap/ic_invert_colors_white_24dp"
+            android:title="Fuel Performance" />
+        <item android:id="@+id/nav_slideshow" android:icon="@mipmap/ic_dignostic"
+            android:title="Vehicle Health Monitoring" />
+        <item android:id="@+id/nav_manage" android:icon="@mipmap/ic_place_white_24dp"
+            android:title="Locate Your Car" />
+        <item android:id="@+id/nav_all_parameter" android:icon="@mipmap/ic_info_outline_white_24dp"
+            android:title="All Parameters" />
+        <item android:id="@+id/nav_register_vehicle" android:icon="@mipmap/ic_person_add_white_24dp"
+            android:title="Register New Vehicle" />
+    </group>
+
+<!--    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
+                android:title="Share" />
+            <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

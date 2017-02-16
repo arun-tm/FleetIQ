@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary_transparent"
+        >
+
+        <View
+            android:id="@+id/indicator"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_600"
+            />
+
+        <TextView
+            android:id="@+id/attribute_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Short term fuel trim"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/attribute_value"
+
+            android:layout_marginRight="20dp"
+            />
+        <TextView
+            android:id="@+id/attribute_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="75%"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueGray"
+    >
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/net_bg2"
+        android:alpha="0.2"
+        >
+
+    </FrameLayout>
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:layout_marginLeft="50dp"
+        android:id="@+id/fuel_progress_indicator"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_fuel_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel Score"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/fuel_progress_indicator"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="30dp"
+        >
+        <ImageView
+            android:id="@+id/img_mpg"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/ic_local_gas_station_white_24dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/txt_mpg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="@android:color/white"
+
+            android:layout_below="@+id/img_mpg"
+            android:textSize="23sp"
+            android:layout_marginTop="6dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/txt_mpg"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:text="kmpl"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        >
+        <ImageView
+            android:id="@+id/img_can_go"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/ic_beenhere_white_24dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/txt_can_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/img_can_go"
+            android:textSize="23sp"
+            android:layout_marginTop="6dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/txt_can_go"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:text="km."
+            />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_fuel_type"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="30dp"
+        android:divider="#00FFFFFF"
+        android:dividerHeight="5dp"
+        ></ListView>
+
+    <TextView
+        android:id="@+id/txt_no_data_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_fuel_type"
+        android:text="No data found !!"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:alpha="0.6"
+        android:gravity="center"
+        />
+
+
+
+</RelativeLayout>

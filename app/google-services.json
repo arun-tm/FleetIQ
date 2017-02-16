@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "206015261347",
+    "project_id": "flint-1905"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206015261347:android:0334d8170fd67392",
+        "android_client_info": {
+          "package_name": "com.teramatrix.flint"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtz-qqzgiRU5UCcBqYqmH0kuSaPSz91XA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206015261347:android:8b7f31d4eb65cdcf",
+        "android_client_info": {
+          "package_name": "com.teramatrix.fleetiq"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtz-qqzgiRU5UCcBqYqmH0kuSaPSz91XA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-72984712-5"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Flint Online</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_graph">Graph</string>
+    <string name="google_map_api_key">AIzaSyAtz-qqzgiRU5UCcBqYqmH0kuSaPSz91XA</string>
+    <string name="request_failure">Failed to connect to the network, Please try again.</string>
+    <string name="login_unsuccess">Failed to login with provided details, Please try again.</string>
+</resources>

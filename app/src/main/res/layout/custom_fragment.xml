@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:background="@color/blueGray"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/filter_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="3">
+
+
+        <com.rey.material.widget.Spinner
+            android:id="@+id/spinner_vehicle"
+            style="@style/Material.Widget.Spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:popupBackground="@color/blueGray_dark"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave"
+            app:spn_label="Vehicle"
+            app:spn_labelEnable="true"
+            app:spn_labelTextColor="@android:color/white"
+            app:spn_labelTextSize="13sp"
+            app:spn_dividerHeight="3dp"
+            app:spn_dividerColor="@color/blueGray_dark"
+            />
+
+        <com.rey.material.widget.Spinner
+            android:id="@+id/spinner_driven"
+            style="@style/Material.Widget.Spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:popupBackground="@color/blueGray_dark"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave"
+            app:spn_label="Driven"
+            app:spn_labelEnable="true"
+            app:spn_labelTextColor="@android:color/white"
+            app:spn_labelTextSize="13sp"
+            app:spn_dividerHeight="3dp"
+            app:spn_dividerColor="@color/blueGray_dark"
+            />
+
+        <com.rey.material.widget.Spinner
+            android:id="@+id/spinner_graph"
+            style="@style/Material.Widget.Spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:popupBackground="@color/blueGray_dark"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave"
+            app:spn_label="Graph"
+            app:spn_labelEnable="true"
+            app:spn_labelTextColor="@android:color/white"
+            app:spn_labelTextSize="13sp"
+            app:spn_dividerHeight="3dp"
+            app:spn_dividerColor="@color/blueGray_dark"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/range_selector"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/filter_view"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:src="@mipmap/ic_left_triangular_arrow_icon_71069" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="This Week"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:gravity="center"
+                android:text="Distance Graph"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:src="@mipmap/ic_right_triangular_arrow_icon_71069" />
+    </LinearLayout>
+
+
+    <com.teramatrix.fleetiq.custom.MyBarChart
+        android:id="@+id/custom_bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/range_selector"
+        android:background="@color/blueGray_dark"></com.teramatrix.fleetiq.custom.MyBarChart>
+
+
+    <!-- <Button
+         android:id="@+id/btn_refresh"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:text="Refresh"
+         android:layout_centerHorizontal="true"
+         />-->
+
+    <RelativeLayout
+        android:id="@+id/layout_event_reciver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></RelativeLayout>
+
+</RelativeLayout>

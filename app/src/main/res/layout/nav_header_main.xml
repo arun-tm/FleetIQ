@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/side_nav_bar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:id="@+id/m1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/truck1" />
+
+        <TextView
+            android:id="@+id/account_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="5dp"
+            android:text=" Volvo X 5120"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/account_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:text=" UP 21 AQ-0634"
+            android:layout_below="@+id/account_title"
+            android:layout_marginBottom="20dp"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/account_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/account_title"
+            android:layout_alignBottom="@+id/account_subtitle"
+            android:layout_marginRight="5dp"
+            >
+            <ImageView
+                android:id="@+id/img_drop_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_arrow_drop_down_white_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/h_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m1"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ListView
+            android:id="@+id/listview_accounts"
+            android:layout_width="match_parent"
+            android:divider="@null"
+            android:visibility="gone"
+            android:layout_height="wrap_content"></ListView>
+
+        <LinearLayout
+            android:id="@+id/account_list_parent_view"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

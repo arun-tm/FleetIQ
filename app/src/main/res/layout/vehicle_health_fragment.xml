@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueGray">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="-100dp"
+        android:alpha="0.2"
+        android:background="@drawable/net_bg2"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-100dp"
+        android:alpha="0.2"
+        android:background="@drawable/et_bg2_flip"></FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_radial_menu"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/truck_chasis_2" />
+
+    <View
+        android:id="@+id/ver_divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:visibility="invisible"></View>
+
+    <View
+        android:id="@+id/hor_divider_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="@android:color/white"
+        android:visibility="invisible"></View>
+
+
+    <!--front left-->
+
+
+    <View
+        android:id="@+id/line11"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/parent_engine_load"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/parent_engine_load"
+        android:layout_toLeftOf="@+id/ver_divider"
+        android:background="@android:color/white"
+        android:visibility="visible"></View>
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@+id/line11"
+        android:layout_alignTop="@+id/line11"
+        android:background="@android:color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/parent_engine_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hor_divider_divider"
+        android:layout_marginBottom="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/hor_divider"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="Engine\nLoad"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_engine_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="00.00 %"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/ic_check_white_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/black"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                >
+
+                <LinearLayout
+                    android:id="@+id/bar_engine_load"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/external_progress"></LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/ic_brightness_5_white_24dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Fuel Consumption-->
+
+    <View
+        android:id="@+id/line12"
+        android:layout_width="1dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/parent_fuel_consumption"
+        android:layout_alignLeft="@+id/parent_fuel_consumption"
+        android:layout_marginBottom="-70dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/line12"
+        android:layout_marginRight="-10dp"
+        android:layout_toLeftOf="@+id/line12"
+        android:layout_toRightOf="@+id/ver_divider"
+        android:layout_marginLeft="45dp"
+        android:background="@android:color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/parent_fuel_consumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hor_divider_divider"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:text="Fuel\nConsumption"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/ic_check_white_24dp" />
+
+            <TextView
+                android:id="@+id/txt_fuel_consumption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="00 L"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/ic_brightness_5_white_24dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/black"
+                android:weightSum="100"
+                >
+
+                <LinearLayout
+                    android:id="@+id/bar_fuel_consumption"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/external_progress"></LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--Throttel Opening-->
+
+    <View
+        android:id="@+id/line_33"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/parent_throttel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/ver_divider"
+        android:layout_toRightOf="@+id/parent_throttel"
+        android:background="@android:color/white" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/line_33"
+        android:layout_marginBottom="-11dp"
+        android:layout_toRightOf="@+id/line_33"
+        android:background="@android:color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/parent_throttel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hor_divider_divider"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="Throttle\nOpening"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_throttel_opening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="00 %"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/ic_check_white_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/black"
+                android:weightSum="100"
+                >
+
+                <LinearLayout
+                    android:id="@+id/bar_throttel_opening"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/external_progress"></LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/ic_brightness_5_white_24dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Coolent Temparature-->
+    <View
+        android:id="@+id/line_44"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/parent_coolent_temp"
+        android:layout_above="@+id/parent_coolent_temp"
+        android:background="@android:color/white" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@android:color/white"
+        android:layout_above="@+id/line_44"
+        android:layout_toLeftOf="@+id/line_44"
+        android:layout_toRightOf="@+id/ver_divider"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="-1dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/parent_coolent_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/hor_divider_divider"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coolant\nTemperature"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/ic_check_white_24dp" />
+
+            <TextView
+                android:id="@+id/txt_coolent_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="00 C"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/ic_brightness_5_white_24dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/black"
+                android:weightSum="100"
+                >
+
+                <LinearLayout
+                    android:id="@+id/bar_coolen_temp"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/external_progress"></LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--Total Ignitions-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/txt_body_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total\nIgnitions"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+
+                />
+            <TextView
+                android:id="@+id/txt_total_ignitions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_alignLeft="@+id/txt_body_weight"
+                android:layout_alignRight="@+id/txt_body_weight"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:layout_below="@+id/txt_body_weight"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/txt_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Error Code\nCount"
+                android:textColor="@android:color/white"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:textSize="14sp"
+
+                />
+            <TextView
+                android:id="@+id/txt_error_code_counts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_alignLeft="@+id/txt_temp"
+                android:layout_alignRight="@+id/txt_temp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/txt_temp"
+                android:textStyle="bold"
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/txt_total_hash_acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Harsh\nAcceleration"
+                android:textColor="@android:color/white"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/txt_total_harsh_accelaration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_alignLeft="@+id/txt_total_hash_acc"
+                android:layout_alignRight="@+id/txt_total_hash_acc"
+                android:gravity="center_horizontal"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:layout_below="@+id/txt_total_hash_acc"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/txt_total_hash_breaks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Harsh\nBreaks"
+                android:textColor="@android:color/white"
+                android:drawablePadding="5dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt_total_hash_breaks_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_alignLeft="@+id/txt_total_hash_breaks"
+                android:layout_alignRight="@+id/txt_total_hash_breaks"
+                android:gravity="center_horizontal"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:layout_below="@+id/txt_total_hash_breaks"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

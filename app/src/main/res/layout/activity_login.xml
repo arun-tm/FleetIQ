@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.teramatrix.fleetiq.Login"
+    android:id="@+id/root"
+    >
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/truck_bg2"
+        >
+    </ImageView>
+
+    <FrameLayout
+        android:id="@+id/transparent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:alpha="0.4"
+        >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerInParent="true"
+        >
+
+
+        <ImageView
+            android:id="@+id/img_fleet_iq_icon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/flint_app_icon"
+            android:layout_centerInParent="true"
+
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/form_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:layout_alignParentStart="true">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/white"
+                android:layout_centerInParent="true"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edPlace"
+                    android:theme="@style/ColorAccentSupplier"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:textColor="@android:color/white"
+                    android:drawableLeft="@mipmap/ic_perm_identity_white_24dp"
+                    android:alpha="1"
+                    android:drawablePadding="10dp"
+                    android:textSize="20sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_marginTop="200dp"
+                android:textColorHint="@android:color/white"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edPassword"
+                    android:theme="@style/ColorAccentSupplier"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textColor="@android:color/white"
+                    android:drawableLeft="@mipmap/ic_vpn_key_white_24dp"
+                    android:drawableTint="@android:color/white"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:textSize="20sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnGo"
+                android:text="Login"
+                android:layout_below="@+id/password"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginTop="35dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/btn_outlined_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <CheckBox
+                android:id="@+id/cb_remember_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnGo"
+                android:layout_marginTop="15dp"
+                android:text="Remember Me"
+                android:buttonTint="@android:color/white"
+                android:textColor="@android:color/white"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/txt_terms_and_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:text="Terms and condition"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        />
+
+</RelativeLayout>
